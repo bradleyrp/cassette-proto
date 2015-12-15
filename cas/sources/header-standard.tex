@@ -1,0 +1,59 @@
+
+%---simple article tex header for cassette
+
+%---class [options include: article, IEEEtran]
+\documentclass[10pt,]{DOCCLASS}
+
+%---encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+
+%---requires (definitely) cbfonts (probably) newunicodechar,textgreek,babel-greek,greek-fontenc
+\usepackage{newunicodechar,textgreek}
+
+%---packages
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{enumitem}
+\setlistdepth{9}
+
+%---bibliography
+\usepackage[numbers,sort&compress,square]{natbib}
+\bibliographystyle{unsrt}
+
+%---graphics
+\usepackage{graphicx,grffile}
+
+%---ocgcolorlinks prints links in black but shows them in color
+\usepackage[unicode=true,ocgcolorlinks]{hyperref}
+
+%---hyperlinks
+\hypersetup{
+breaklinks=true,
+bookmarks=true,
+pdfauthor={@AUTHORS},
+pdftitle={supplement},
+colorlinks=true,
+citecolor=blue,
+urlcolor=blue,
+linkcolor=blue,
+pdfborder={0 0 0}}
+
+%---floating
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+\origfigure[H]}{\endorigfigure}
+
+%---annotations
+\usepackage[rgb]{xcolor}
+\usepackage[author={writer}]{pdfcomment}
+
+%---date
+\date{}
+
+%---nice colors
+\definecolor{babyblueeyes}{rgb}{0.63, 0.79, 0.95}
+\definecolor{babypink}{rgb}{0.96, 0.76, 0.76}
+\definecolor{aliceblue}{rgb}{0.94, 0.97, 1.0}

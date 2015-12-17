@@ -1,12 +1,19 @@
 #!/usr/bin/python
 
+"""
+Writes an index.html file for a set of documents.
+"""
+
 import os,sys,glob,re
 
 ltype = ['ol','ul'][-1]
 
 html = ["""<link rel="stylesheet" href="./cas/sources/main.css" type="text/css"/>"""]
 html += ["<title>drafts</title><body>"]
-html += ["""<div id="wrapper"><div id="main_content"><h1>drafts</h1>"""]
+html += ["""<div id="wrapper"><div id="main_content">"""]
+if 0: html += ["""<h1><img src="cas/sources/cassette-logo.png" style="max-width:40px;max-height:40px;">"""]
+else: html += ["""<h1>"""]
+html += ["""drafts</h1>"""]
 if 0: html += ["""<a style="color: black;" href="../index.html">back to main page</a>"""]
 if 0: html += ["""<a href="javascript:history.go(-1)" style="color:black;">return</a>"""]
 html += ["""<div class="article_text">"""]

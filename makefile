@@ -118,3 +118,11 @@ ifeq (,$(findstring save,${RUN_ARGS}))
 	bash cas/version/pull.sh ${RUN_ARGS}
 	@if [ false ]; then echo "[STATUS] done"; exit 0; else true; fi	
 endif
+
+#---get cassette code changes from another
+getcode:
+ifeq (,$(findstring save,${RUN_ARGS}))
+	@/bin/echo -n "[STATUS] pulling code changes: "
+	bash cas/version/getcode.sh ${RUN_ARGS}
+	@if [ false ]; then echo "[STATUS] done"; exit 0; else true; fi	
+endif

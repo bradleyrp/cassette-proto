@@ -1,5 +1,5 @@
 
-<img src="https://github.com/bradleyrp/cassette/raw/master/cas/source.png"/>
+<img src="https://raw.githubusercontent.com/bradleyrp/cassette/master/cas/sources/cassette.png"/>
 
 CASSETTE
 ========

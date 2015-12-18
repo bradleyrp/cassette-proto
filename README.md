@@ -1,5 +1,5 @@
 
-<img src="https://raw.githubusercontent.com/bradleyrp/cassette/master/cas/sources/cassette.png" style="max-height:80;max-width:80;"/>
+<img src="https://raw.githubusercontent.com/bradleyrp/cassette/master/cas/sources/cassette.png" style="max-width:60px;max-height:60px;"/>
 
 CASSETTE
 ========
